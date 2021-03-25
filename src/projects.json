@@ -1,0 +1,59 @@
+[
+    {
+      "id": 1,
+      "name": "Study Kanji",
+      "image": "/images/kanji_study_app.png",
+      "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
+      "github": "https://github.com/desasser/Japanese-Study-App",
+      "live": "https://desasser.github.io/Japanese-Study-App/"
+    },
+    {
+        "id": 2,
+        "name": "Point of Sale",
+        "image": "/images/kanji_study_app.png",
+        "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
+        "github": "https://github.com/desasser/Japanese-Study-App",
+        "live": "https://desasser.github.io/Japanese-Study-App/"
+    },
+    {
+        "id": 3,
+        "name": "Weather Dashboard",
+        "image": "../images/weather-dashboard-screenshot.png",
+        "description": "Incorporates Weather API- current weather, 5-day forecast, UV Index, and icon database. User can search for a city, and recieve up to date weather information. Website saves the users previous searches to easily revisit the weather conditions of previously searched cities",
+        "github": "https://github.com/guaaur04/api-weather-dashboard",
+        "live": " https://guaaur04.github.io/api-weather-dashboard/"
+    },
+    {
+        "id": 4,
+        "name": "Password Generator",
+        "image": "../images/password-generator.png",
+        "description": "The 🔒 Random Password Generator 🔒 creates passwords between 8-128 characters.",
+        "github": "https://github.com/guaaur04/Javascript-Password-Generator",
+        "live": "https://guaaur04.github.io/Javascript-Password-Generator/"
+    },
+    {
+        "id": 5,
+        "name": "Pizza Cutter",
+        "image": "../images/admin_dash.png",
+        "description": "Restaurant Administrative Dashboard built for Pizza Cutter, Michigan since 1975. This appliction allows restaurant managers ability to easily edit the content of their website.",
+        "github": "https://github.com/zhuxiaoyu1019/online-order-system",
+        "live": "https://pizzacutterapp.herokuapp.com/pizzacutter"
+    },
+    {
+        "id": 6,
+        "name": "Budget Tracker",
+        "image": "../images/weather-dashboard-screenshot.png",
+        "description": "Progressive Web Application with offline functionality that provides users a quick tool to manage and view both deposits, and expenses.",
+        "github": "https://github.com/guaaur04/PWA-Budget-Tracker",
+        "live": "https://shrouded-fortress-81979.herokuapp.com/"
+    },
+    {
+        "id": 7,
+        "name": "Employee Tracker",
+        "image": "../images/budget_tracker.png",
+        "description": "This is a React application that serves as quick-access employee directory wherein you can view basic employee details, and sort alphabetically by first name.",
+        "github": "https://github.com/guaaur04/employee_tracker_v2",
+        "live": " https://shrouded-fortress-81979.herokuapp.com/"
+    }
+  ]
+  
