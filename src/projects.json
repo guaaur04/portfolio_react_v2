@@ -42,7 +42,7 @@
     {
         "id": 6,
         "name": "Budget Tracker",
-        "image": "../images/weather-dashboard-screenshot.png",
+        "image": "../images/budget_tracker.png",
         "description": "Progressive Web Application with offline functionality that provides users a quick tool to manage and view both deposits, and expenses.",
         "github": "https://github.com/guaaur04/PWA-Budget-Tracker",
         "live": "https://shrouded-fortress-81979.herokuapp.com/"
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "name": "Employee Tracker",
-        "image": "../images/budget_tracker.png",
+        "image": "../images/employee_directory.png",
         "description": "This is a React application that serves as quick-access employee directory wherein you can view basic employee details, and sort alphabetically by first name.",
         "github": "https://github.com/guaaur04/employee_tracker_v2",
         "live": " https://shrouded-fortress-81979.herokuapp.com/"

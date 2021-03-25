@@ -10,6 +10,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
+import Tooltip from '@material-ui/core/Tooltip';
 
 //Tabs
 import Paper from '@material-ui/core/Paper';
@@ -28,11 +29,16 @@ const useStyles = makeStyles((theme) => ({
     position: 'center',
     marginTop: 'auto',
     margin: 'auto',
+
+  },
+
+  tabs: {
     backgroundColor: 'lightgray',
+    width: '100%',
   },
 
   toolbar: {
-    minHeight: 300,
+    minHeight: 100,
     alignItems: 'center',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
@@ -51,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
 
   navbarDisplayFlex: {
     display: `flex`,
-    justifyContent: `space-between`
+    justifyContent: `space-between`,
+    marginTop: 'auto',
   },
 
 }));
@@ -111,18 +118,18 @@ export default function ProminentAppBar() {
         <Container className ={classes.navbarDisplayFlex}>
     
           {/* <Typography className={classes.title} variant="h5" noWrap>
-            Placeholder Text
+            V Guardado
           </Typography> */}
 
           {/* Menu Button */}
 
      <div>
 
+      <Tooltip title="Open Menu">
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-
       <MenuIcon></MenuIcon>
-       
       </Button>
+      </Tooltip>
 
       <Menu
         id="simple-menu"
@@ -141,7 +148,7 @@ export default function ProminentAppBar() {
     <div>
 
     {/* Tabs */}
-    <Paper className={classes.root}>
+    <Paper className={classes.tabs}>
       <Tabs
         value={value}
         onChange={handleChange}

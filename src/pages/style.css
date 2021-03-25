@@ -1,9 +1,9 @@
-#projectsWrapper{
-    display: flex;
-    margin-left: 18em;
-    flex-flow: row wrap;
+#projectsWrapper, #homeWrapper{
+    margin: auto;
+    flex-flow: wrap;
     top: 0;
     bottom: 0;
-    height: calc(100% / 4);
-   
-}
+    position: relative;
+    height: 100%;
+    clear: both;
+} 

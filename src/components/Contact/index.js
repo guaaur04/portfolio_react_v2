@@ -14,15 +14,16 @@ import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        marginLeft: '500px',
-        marginRight: '500px',
-        marginTop: '20px',
-        marginBottom: '20px',
+        // marginLeft: '500px',
+        // marginRight: '500px',
+        // marginTop: '20px',
+        // marginBottom: '20px',
         fontSize: '45px',
     },
 
     center: {
         marginLeft: '500px',
+        float: 'right',
     }
 }));
 
@@ -34,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
             <div>
 
 
-                <Typography classname={classes.center} variant="body3">Contact me via E-mail, Github or LinkedIn!</Typography>
+                {/* <Typography classname={classes.center} variant="body3">Contact me via E-mail, Github or LinkedIn!</Typography> */}
 
 
                 {/* <ContactForm /> */}
@@ -44,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
                     color="primary"
                     aria-label="contained primary button group"
                     variant="text"
+                    orientation="vertical"
+                    className ={classes.center}
                 >
                     <IconButton className={classes.icons} aria-label="Github" href="https://github.com/guaaur04">
                         <FavoriteIcon />

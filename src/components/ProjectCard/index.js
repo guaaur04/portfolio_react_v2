@@ -15,11 +15,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 375,
     minWidth: 250,
     backgroundColor: 'lightblue',
     borderRadius: '10px',
-    margin: '2rem',
+    margin: '1.5rem',
     position: 'relative',
     boxShadow: '0 3px 6px #999, 0 3px 6px #999',
     textAlign: 'left',
@@ -29,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     width: 'calc(100% / 3)',
     flexFlow: "row",
     flexWrap: "wrap",
-
 
   },
   media: {
