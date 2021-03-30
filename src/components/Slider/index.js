@@ -9,12 +9,13 @@ const useStyles = makeStyles((theme) => ({
   root:{
     display: 'flex',
     position: 'relative',
-    justifyContent: 'space-around',
+    // justifyContent: 'space-around',
     margin: 'auto',
-    marginLeft: '5em',
-    maxWidth: 800,
-    minWidth: 800,
-    height: 400,
+    marginBottom: '13em',
+    // marginLeft: '5em',
+    // maxWidth: 800,
+    // minWidth: 800,
+    // height: 400,
   }
 
 }));

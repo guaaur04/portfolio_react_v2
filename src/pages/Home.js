@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
         width: 'calc(100% / 2)',
         flexFlow: "row",
         flexWrap: "wrap",
+        margin: "auto",
     },
   
 
@@ -36,17 +37,17 @@ function Home() {
 
         <Nav />
 
-        <div id="homeWrapper">
-            
+        {/* <div id="homeWrapper"> */}
+
         <Grid container className={classes.grid} spacing={2}>
-        <Grid item xs={12}>
+        <Grid item xs={6}>
 
         <Slider/>
 
         </Grid>
 
         
-        <Grid item xs={12}>
+        <Grid item xs={6}>
         <Paper elevation={6}>
     
         <Paper elevation={6} className={classes.aboutText}>Full-Stack Developer</Paper>
@@ -63,7 +64,7 @@ function Home() {
 
         <ContactLinks />
 
-    </div>
+    {/* </div> */}
 
         <Footer />
 

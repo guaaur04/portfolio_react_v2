@@ -46,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
     '&:hover': {
       backgroundColor: "salmon",
     },
+
+    display: 'flex',
+
   },
 
   links:{
