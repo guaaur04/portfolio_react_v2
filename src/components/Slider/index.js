@@ -7,14 +7,14 @@ import "./style.css";
 
 const useStyles = makeStyles((theme) => ({
   root:{
-    display: 'inline-flex',
+    display: 'flex',
+    position: 'relative',
     justifyContent: 'space-around',
     margin: 'auto',
-    marginLeft: '10em',
-
-    maxWidth: 900,
-    minWidth: 900,
-    height: 500,
+    marginLeft: '5em',
+    maxWidth: 800,
+    minWidth: 800,
+    height: 400,
   }
 
 }));

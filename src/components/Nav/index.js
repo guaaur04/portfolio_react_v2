@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   tabs: {
-    backgroundColor: 'lightgray',
+    // backgroundColor: 'lightgray',
+    backgroundColor: 'white',
     width: '100%',
   },
 
@@ -117,9 +118,9 @@ export default function ProminentAppBar() {
         <Toolbar className={classes.toolbar}>
         <Container className ={classes.navbarDisplayFlex}>
     
-          {/* <Typography className={classes.title} variant="h5" noWrap>
-            V Guardado
-          </Typography> */}
+          <Typography className={classes.title} variant="h2" noWrap>
+            Auricia V Guardado
+          </Typography>
 
           {/* Menu Button */}
 

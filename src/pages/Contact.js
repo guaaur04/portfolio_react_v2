@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import ContactLinks from "../components/ContactLinks";
 
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -42,11 +43,14 @@ function Contact() {
                     
                     {/* Link to download resume  */}
                     
-                    </Paper>
+                </Paper>
+
+                <ContactLinks/>
 
                
 
             <div> <Footer /> </div>
+            
         </div>
     );
 }
