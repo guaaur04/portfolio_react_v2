@@ -11,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     // justifyContent: 'space-around',
     margin: 'auto',
-    marginBottom: '13em',
+    marginBottom: '5em',
     // marginLeft: '5em',
-    // maxWidth: 800,
-    // minWidth: 800,
-    // height: 400,
+    maxWidth: 500,
+    minWidth: 500,
+    height: 400,
   }
 
 }));

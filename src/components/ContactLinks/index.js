@@ -7,6 +7,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import FavoriteIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton';
+import { red } from '@material-ui/core/colors';
 
 
 // import { makeStyles, withStyles, ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
@@ -22,9 +23,21 @@ const useStyles = makeStyles((theme) => ({
     },
 
     center: {
-        marginLeft: '500px',
+        // marginLeft: '500px',
+        position: 'fixed',
         float: 'right',
-    }
+
+        // position: 'absolute',  
+    },
+
+    icons:{
+        color: theme.palette.getContrastText(red[500]),
+        backgroundColor: red[500],
+        '&:hover': {
+          backgroundColor: red[700],
+          width: '100%',
+        },
+      },
 }));
 
     function Contact() {
@@ -57,10 +70,6 @@ const useStyles = makeStyles((theme) => ({
                     </IconButton>
 
                 </ButtonGroup>
-
-
-
-
 
             </div>
 

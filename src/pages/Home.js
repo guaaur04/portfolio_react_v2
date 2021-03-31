@@ -21,12 +21,17 @@ const useStyles = makeStyles((theme) => ({
     grid: {
         flexGrow: 1,
         display: 'flex',
-        width: 'calc(100% / 2)',
+        gridTemplateColumns: '200px 3em 100px',
+        // gridColumn: 'span 3/-1',
+
+
+        // width: 'calc(100% / 2)',
         flexFlow: "row",
         flexWrap: "wrap",
         margin: "auto",
+        // position: "relative",
+    
     },
-  
 
 }));
 
@@ -43,7 +48,9 @@ function Home() {
         <Grid item xs={6}>
 
         <Slider/>
-
+        <Paper elevation={6} className={classes.aboutText}>Full-Stack Developer</Paper>
+        <Paper elevation={6} className={classes.aboutText}>Cooperative Development</Paper>
+        <Paper elevation={6} className={classes.aboutText}>Teamwork</Paper>
         </Grid>
 
         
@@ -62,7 +69,9 @@ function Home() {
         </Grid>
         </Grid>
 
+        
         <ContactLinks />
+        
 
     {/* </div> */}
 

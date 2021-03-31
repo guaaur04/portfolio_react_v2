@@ -25,10 +25,9 @@ const useStyles = makeStyles((theme) => ({
   //Tabs
   root: {
     flexGrow: 1,
-    display: 'flex',
-    position: 'center',
-    marginTop: 'auto',
-    margin: 'auto',
+    // position: 'center',
+    // marginTop: 'auto',
+    // margin: 'auto',
 
   },
 
@@ -36,20 +35,29 @@ const useStyles = makeStyles((theme) => ({
     // backgroundColor: 'lightgray',
     backgroundColor: 'white',
     width: '100%',
+    // display: 'flex',
+    // position: 'relative',
   },
 
   toolbar: {
-    minHeight: 100,
+    minHeight: 125,
     alignItems: 'center',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
+    
     // Nav Color
     backgroundColor: "whitesmoke",
+
+  
+
   },
   title: {
     flexGrow: 1,
     alignSelf: 'flex-end',
     color: 'black',
+    display: 'flex',
+    
+  
   },
   mobile:{
     margin: 'auto',
@@ -118,7 +126,15 @@ export default function ProminentAppBar() {
         <Toolbar className={classes.toolbar}>
         <Container className ={classes.navbarDisplayFlex}>
     
-          <Typography className={classes.title} variant="h2" noWrap>
+
+      <Tooltip title="Open Menu">
+      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+      <MenuIcon></MenuIcon>
+      </Button>
+      </Tooltip>
+
+
+          <Typography className={classes.title} variant="h3" noWrap>
             Auricia V Guardado
           </Typography>
 
@@ -126,11 +142,6 @@ export default function ProminentAppBar() {
 
      <div>
 
-      <Tooltip title="Open Menu">
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-      <MenuIcon></MenuIcon>
-      </Button>
-      </Tooltip>
 
       <Menu
         id="simple-menu"

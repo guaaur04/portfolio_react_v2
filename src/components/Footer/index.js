@@ -8,7 +8,10 @@ import Link from '@material-ui/core/Link';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
 import FavoriteIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import IconButton from '@material-ui/core/IconButton';
+
+import { red } from '@material-ui/core/colors';
 
 
 
@@ -27,24 +30,22 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     position: 'relative',
-    flexDirection: 'column',
+    flexDirection: 'row',
     minHeight: '100vh',
+    bottom: 0,
   },
-//   main: {
-//     marginTop: theme.spacing(8),
-//     marginBottom: theme.spacing(2),
-//   },
 
   footer: {
-    position: 'relative',
+    position: 'static',
+    width: '100%',
     padding: theme.spacing(2, 2),
     marginTop: '0 auto',
     paddingBottom: '2.5 rem',
-    minHeight: '75vh',
+    minHeight: '50vh',
     color: theme.palette.getContrastText("#598392"),
     backgroundColor: "#598392",
     '&:hover': {
-      backgroundColor: "salmon",
+      backgroundColor: "#59A5D8",
     },
 
     display: 'flex',
@@ -53,8 +54,18 @@ const useStyles = makeStyles((theme) => ({
 
   links:{
     float: 'right',
-    // color: 'black',
-  }
+  },
+
+  icons:{
+    color: theme.palette.getContrastText(red[500]),
+    backgroundColor: red[500],
+    '&:hover': {
+      backgroundColor: red[700],
+      // width: '100%',
+    },
+  
+  },
+
 }));
 
 export default function StickyFooter() {
@@ -62,17 +73,24 @@ export default function StickyFooter() {
 
   return (
     <div className={classes.root}>
+
       <CssBaseline />
+
       <footer className={classes.footer}>
         <Container maxWidth="sm">
           <Typography variant="body1">V Guardado 👨🏾‍💻 </Typography>
+
           <Copyright />
+
           <Typography variant="body3">Powered by React and Material UI</Typography>
+
+          <Typography variant="body3">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
+
         </Container>
+
         <Container>
-        <Typography variant="body3">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
         
-        {/* <Typography variant="body3">Contact me!</Typography> */}
+        {/* <Typography variant="body3">Stay Connected</Typography> */}
 
         <ButtonGroup
                     color="primary"
@@ -89,7 +107,12 @@ export default function StickyFooter() {
                         <LinkedInIcon />
                     </IconButton>
 
-                </ButtonGroup>
+                    <IconButton className={classes.icons} aria-label="Twitter" href="https://twitter.com/V88118935">
+                        <TwitterIcon />
+                    </IconButton>
+
+
+          </ButtonGroup>
 
         
         

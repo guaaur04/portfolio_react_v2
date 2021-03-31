@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 375,
     minWidth: 250,
-    backgroundColor: 'lightblue',
+    backgroundColor: '#26C485',
     borderRadius: '10px',
     margin: '1.5rem',
     position: 'relative',
-    boxShadow: '0 3px 6px #999, 0 3px 6px #999',
+    boxShadow: '0 3px 6px #999, 0 3px 5px #999',
     textAlign: 'left',
     justifyContent: 'center',
   

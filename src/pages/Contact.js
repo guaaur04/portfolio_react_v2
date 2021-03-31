@@ -38,7 +38,7 @@ function Contact() {
 
                 <h1 className={classes.title}>Contact</h1>
                 <Paper elevation={3}>
-                    Download Resume
+                    <Typography variant ="h4">Download Resume</Typography>
                     <PictureAsPdfIcon/> 
                     
                     {/* Link to download resume  */}
@@ -47,6 +47,7 @@ function Contact() {
 
                 <ContactLinks/>
 
+               <img src="https://media.giphy.com/media/py5qVYNFWCXpXKzcnk/giphy.gif" alt="glastrier" width="100" height="100"></img>
                
 
             <div> <Footer /> </div>
