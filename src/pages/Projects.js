@@ -47,6 +47,7 @@ function Portfolio() {
                         github={project.github}
                         live={project.live}
                     />
+                
                 ))}
                 </Grid>
                 </Grid>
