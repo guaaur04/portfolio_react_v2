@@ -7,6 +7,7 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import FavoriteIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import IconButton from '@material-ui/core/IconButton';
+import TwitterIcon from '@material-ui/icons/Twitter';
 import { red } from '@material-ui/core/colors';
 
 
@@ -67,6 +68,10 @@ const useStyles = makeStyles((theme) => ({
 
                     <IconButton className={classes.icons} aria-label="LinkedIn" href="https://www.linkedin.com/in/auricia-v-guardado-599883a0/">
                         <LinkedInIcon />
+                    </IconButton>
+
+                    <IconButton className={classes.icons} aria-label="Twitter" href="https://twitter.com/V88118935">
+                        <TwitterIcon />
                     </IconButton>
 
                 </ButtonGroup>

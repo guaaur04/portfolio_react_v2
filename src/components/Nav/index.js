@@ -33,22 +33,24 @@ const useStyles = makeStyles((theme) => ({
 
   tabs: {
     // backgroundColor: 'lightgray',
-    backgroundColor: 'white',
-    width: '100%',
-    // display: 'flex',
-    // position: 'relative',
+    fontSize: '20px', 
+    fontWeight: '30px',
+    width: '20em',
+    color: 'black',
+    display: 'flex',
+    position: 'relative',
+    margin: 'auto',
+    
   },
 
   toolbar: {
-    minHeight: 125,
+    minHeight: 10,
     alignItems: 'center',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
     
     // Nav Color
     backgroundColor: "whitesmoke",
-
-  
 
   },
   title: {
@@ -60,14 +62,17 @@ const useStyles = makeStyles((theme) => ({
   
   },
   mobile:{
-    margin: 'auto',
+    // margin: 'auto',
     alignItems: 'flex-start',
   },
 
   navbarDisplayFlex: {
-    display: `flex`,
+    display: 'flex',
+    // gridTemplateColumns: '1fr 3fr',
+    // gridTemplateRows: '2fr 2fr',
     justifyContent: `space-between`,
-    marginTop: 'auto',
+    margin: 'auto',
+   
   },
 
 }));
@@ -106,12 +111,6 @@ export default function ProminentAppBar() {
     setAnchorEl(null);
   };
 
-  //Tabs
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
 
   //Language
   const [language, setLanguage] = React.useState('English');
@@ -125,23 +124,13 @@ export default function ProminentAppBar() {
       <AppBar position="static">
         <Toolbar className={classes.toolbar}>
         <Container className ={classes.navbarDisplayFlex}>
-    
 
-      <Tooltip title="Open Menu">
+     <div>
+     <Tooltip title="Open Menu">
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
       <MenuIcon></MenuIcon>
       </Button>
       </Tooltip>
-
-
-          <Typography className={classes.title} variant="h3" noWrap>
-            Auricia V Guardado
-          </Typography>
-
-          {/* Menu Button */}
-
-     <div>
-
 
       <Menu
         id="simple-menu"
@@ -160,25 +149,21 @@ export default function ProminentAppBar() {
     <div>
 
     {/* Tabs */}
-    <Paper className={classes.tabs}>
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
-        centered
-      >
-        <Tab icon={<HomeIcon />} href="/"/> 
-        <Tab label="Projects" href="/projects"/>
-        <Tab label="Contact" href="/contact" />
-  
-      </Tabs>
-    </Paper>
+    <div className={classes.tabs}>
+    
+        <Button icon={<HomeIcon />} href="/" className={classes.tabs}> Home </Button>
+
+        <Button label="Projects" href="/projects" className={classes.tabs}> Projects </Button>
+
+        <Button label="Contact" href="/contact" className={classes.tabs}> Contact </Button>
 
     </div>
 
-    {/* Language */}
-    <TextField
+    </div>
+
+    <div>
+     {/* Language */}
+     <TextField
           id="outlined-select-language-native"
           select
           label="Language"
@@ -196,9 +181,14 @@ export default function ProminentAppBar() {
             </option>
           ))}
         </TextField>
+      </div>
+
+
+
+   
       </Container> 
-        </Toolbar>
-      </AppBar>
+    </Toolbar>
+  </AppBar>
     </div>
   );
 }

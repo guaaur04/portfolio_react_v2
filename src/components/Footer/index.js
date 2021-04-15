@@ -46,16 +46,19 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#598392",
     '&:hover': {
       backgroundColor: "#59A5D8",
+
+     
     },
 
     display: 'flex',
 
   },
 
-  links:{
-    float: 'right',
-  },
+  // links:{
+  //   float: 'right',
+  // },
 
+  //Change icon color from red
   icons:{
     color: theme.palette.getContrastText(red[500]),
     backgroundColor: red[500],
@@ -65,6 +68,11 @@ const useStyles = makeStyles((theme) => ({
     },
   
   },
+
+  content: {
+    marginLeft: 250,
+    width: 'auto',
+  }
 
 }));
 
@@ -77,28 +85,29 @@ export default function StickyFooter() {
       <CssBaseline />
 
       <footer className={classes.footer}>
-        <Container maxWidth="sm">
-          <Typography variant="body1">V Guardado 👨🏾‍💻 </Typography>
-
-          <Copyright />
+        <Container maxWidth="sm" className={classes.content}>
+          <Typography variant="h3">V Guardado 👨🏾‍💻 </Typography>
+          <Typography variant="h6">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
 
           <Typography variant="body3">Powered by React and Material UI</Typography>
 
-          <Typography variant="body3">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
-
+          <Copyright />
+            
         </Container>
 
-        <Container>
+        <Container className={classes.content}>
         
-        {/* <Typography variant="body3">Stay Connected</Typography> */}
+        <Typography variant="h5">Stay Connected </Typography>
 
         <ButtonGroup
                     color="primary"
                     aria-label="contained primary button group"
                     variant="text"
                     className = {classes.links}
+                    size = "large"
                     // orientation="vertical"
                 > 
+
                     <IconButton className={classes.icons} aria-label="Github" href="https://github.com/guaaur04">
                         <FavoriteIcon />
                     </IconButton>
