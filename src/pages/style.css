@@ -8,3 +8,37 @@
     height: 100%;
     clear: both;
 } 
+
+.arrow {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+    line-height: 2.5em;
+    padding-left: 1em;
+    padding-right: 2em;
+    background: red;
+    color: black;
+}
+.arrow:after {
+    border-left: 20px solid red;
+}
+.arrow:after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-right: -20px;
+    right: 0;
+}
+.arrow:hover, .arrow:active {
+    background: yellow;
+    color: black;
+}
+.arrow:hover:after, .arrow:active:after {
+    border-left: 20px solid yellow;
+}

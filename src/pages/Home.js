@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import ContactLinks from "../components/ContactLinks";
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -16,17 +17,15 @@ const useStyles = makeStyles((theme) => ({
     aboutText: { 
         display: 'inline-flex',
         margin: 'auto',
-        backgroundColor: 'salmon',
+        backgroundColor: 'lightBlue',
     },
     
     tag: {
         // display: 'flex',
-        margin: 'auto',
-        justifyContent: 'space-around',
+        marginTop: 3,
+        // justifyContent: 'space-around',
         backgroundColor: 'lightgreen',
-
-        justifyContent: 'space-around',
-        flexWrap: 'wrap',
+        // flexWrap: 'wrap',
     },
 
     grid: {
@@ -49,8 +48,12 @@ const useStyles = makeStyles((theme) => ({
         display: 'center',
         justifyContent: 'space-around',
         
-    }
+    }, 
 
+    links: {
+        margin: 'auto',
+    }
+    
 }));
 
 function Home() {
@@ -81,6 +84,10 @@ function Home() {
         </Paper>
 
         <Paper elevation={3} className={classes.aboutText}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Paper>
+        
+        <Button variant="contained" color="secondary" href="/projects" class="arrow">
+        Projects
+        </Button> 
 
         {/* <Paper elevation={3}> */}
         <Paper elevation={6} className={classes.tag}>Full-Stack Developer</Paper>
@@ -90,9 +97,11 @@ function Home() {
         <Paper elevation={6} className={classes.tag}>Cooperative Development</Paper>
         <Paper elevation={6} className={classes.tag}>Teamwork</Paper>
         {/* </Paper> */}
-
         </Grid>
-        <ContactLinks />
+
+        <ContactLinks className={classes.links}/>
+
+        
         </Grid>
 
         
