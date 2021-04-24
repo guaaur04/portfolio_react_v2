@@ -31,16 +31,11 @@ const useStyles = makeStyles((theme) => ({
     grid: {
         flexGrow: 1,
         display: 'flex',
-        gridTemplateColumns: '300px 1em 200px',
         marginTop: '1.5em',
-        // gridColumn: 'span 3/-1',
-
-
-        // width: 'calc(100% / 2)',
         flexFlow: "row",
-        flexWrap: "wrap",
-        // margin: "auto",
-        // position: "relative",
+        // flexWrap: "wrap",
+        margin: "auto",
+        position: "relative",
     
     },
 
@@ -74,6 +69,7 @@ function Home() {
 
         
         <Grid item xs={4} className={classes.aboutContainer}>
+        
 
         <Typography>Welcome</Typography>
 

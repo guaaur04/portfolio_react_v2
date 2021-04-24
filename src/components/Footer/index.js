@@ -86,7 +86,7 @@ export default function StickyFooter() {
 
       <footer className={classes.footer}>
         <Container maxWidth="sm" className={classes.content}>
-          <Typography variant="h3">V Guardado 👨🏾‍💻 </Typography>
+          <Typography variant="h3">V Guardado </Typography>
           <Typography variant="h6">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
 
           <Typography variant="body3">Powered by React and Material UI</Typography>
