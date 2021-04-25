@@ -45,6 +45,7 @@ const useStyles = makeStyles((theme) => ({
 
   toolbar: {
     minHeight: 10,
+    height: 700,
     alignItems: 'center',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
@@ -140,9 +141,9 @@ export default function ProminentAppBar() {
         onClose={handleClose}
         className={classes.mobile}
       >
+        <MenuItem onClick={handleClose}>About</MenuItem>
         <MenuItem onClick={handleClose}>Projects</MenuItem>
         <MenuItem onClick={handleClose}>Contact</MenuItem>
-        <MenuItem onClick={handleClose}>More</MenuItem>
       </Menu>
     </div>
 
@@ -151,7 +152,7 @@ export default function ProminentAppBar() {
     {/* Tabs */}
     <div className={classes.tabs}>
     
-        <Button icon={<HomeIcon />} href="/" className={classes.tabs}> Home </Button>
+        <Button icon={<HomeIcon />} href="/" className={classes.tabs}> About </Button>
 
         <Button label="Projects" href="/projects" className={classes.tabs}> Projects </Button>
 

@@ -16,19 +16,12 @@ import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        // marginLeft: '500px',
-        // marginRight: '500px',
-        // marginTop: '20px',
-        // marginBottom: '20px',
         fontSize: '45px',
     },
 
     center: {
-        // marginLeft: '500px',
         position: 'fixed',
-        float: 'right',
-
-        // position: 'absolute',  
+        marginLeft: '13.5em',
     },
 
     icons:{
@@ -47,13 +40,6 @@ const useStyles = makeStyles((theme) => ({
         <div>
             
             <div>
-
-
-                {/* <Typography classname={classes.center} variant="body3">Contact me via E-mail, Github or LinkedIn!</Typography> */}
-
-
-                {/* <ContactForm /> */}
-
 
                 <ButtonGroup
                     color="primary"
@@ -78,8 +64,6 @@ const useStyles = makeStyles((theme) => ({
 
             </div>
 
-
-            {/* <div> <Footer /> </div> */}
         </div>
     );
 }
