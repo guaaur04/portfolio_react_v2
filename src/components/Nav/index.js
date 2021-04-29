@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 
   tabs: {
     // backgroundColor: 'lightgray',
-    fontSize: '20px', 
+    fontSize: '30px', 
     fontWeight: '30px',
     width: '20em',
     color: 'black',
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
 
   toolbar: {
     minHeight: 10,
-    height: 700,
+    height: 400,
     alignItems: 'center',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),

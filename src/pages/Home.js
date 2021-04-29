@@ -12,6 +12,7 @@ import Grid from '@material-ui/core/Grid';
 
 import "./style.css";
 
+import InfiniteScroll from "react-infinite-scroll-component";
 
 const useStyles = makeStyles((theme) => ({
     aboutText: { 
@@ -61,14 +62,14 @@ function Home() {
 
         {/* <div id="homeWrapper"> */}
 
+
+
         <Grid container className={classes.grid} spacing={1}>
         <Grid item xs={6}>
 
         <Slider/>
         
         </Grid>
-
-        
         <Grid item xs={4} className={classes.aboutContainer}>
         
 
