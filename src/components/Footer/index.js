@@ -42,10 +42,10 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '0 auto',
     paddingBottom: '2.5 rem',
     minHeight: '50vh',
-    color: theme.palette.getContrastText("#598392"),
-    backgroundColor: "#598392",
+    color: theme.palette.getContrastText("#59A5D8"),
+    backgroundColor: "#59A5D8",
     '&:hover': {
-      backgroundColor: "#59A5D8",
+      backgroundColor: "#598392",
 
      
     },

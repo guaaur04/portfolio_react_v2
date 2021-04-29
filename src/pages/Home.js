@@ -3,6 +3,9 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import ContactLinks from "../components/ContactLinks";
+// import ProjectCard from "../components/ProjectCard";
+// import projects from "../projects.json";
+
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography'
@@ -73,7 +76,7 @@ function Home() {
         <Grid item xs={4} className={classes.aboutContainer}>
         
 
-        <Typography>About Me</Typography>
+        <Typography variant="h1">About Me</Typography>
 
 
         <Button variant="contained" color="secondary" href="/projects" class="arrow">
@@ -104,8 +107,7 @@ function Home() {
         
         </Grid>
 
-        
-        
+    
         
 
     {/* </div> */}
