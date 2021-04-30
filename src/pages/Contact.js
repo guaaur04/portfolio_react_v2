@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 import ContactLinks from "../components/ContactLinks";
 
 import Typography from '@material-ui/core/Typography';
@@ -33,8 +34,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative',
         marginLeft: '10em',
         margin: 'auto',
-
-        
+        flexDirection: 'column',   
     }
 }));
 
@@ -48,10 +48,13 @@ function Contact() {
 
             {/* Here I will render my column details */}
 
+            <div id="contactWrapper">
             <h1 className={classes.title}>Contact</h1>
 
 
             {/* Contact Form  */}
+
+            <ContactForm />
 
             <div className={classes.form}>
 
@@ -95,6 +98,8 @@ function Contact() {
             <ContactLinks />
 
             <img src="https://media.giphy.com/media/py5qVYNFWCXpXKzcnk/giphy.gif" alt="glastrier" width="100" height="100"></img>
+           
+            </div>
 
 
             <div> <Footer /> </div>
