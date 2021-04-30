@@ -63,7 +63,7 @@ function Home() {
 
         <Nav />
 
-        {/* <div id="homeWrapper"> */}
+        <div id="homeWrapper">
 
 
 
@@ -110,7 +110,7 @@ function Home() {
     
         
 
-    {/* </div> */}
+    </div>
 
         <Footer />
 

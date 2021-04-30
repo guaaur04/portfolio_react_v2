@@ -1,9 +1,6 @@
 #projectsWrapper, #homeWrapper{
     margin: auto;
-    flex-flow: wrap;
     /* flex-direction: row; */
-    top: 0;
-    bottom: 0;
     position: relative;
     height: 100%;
     clear: both;
