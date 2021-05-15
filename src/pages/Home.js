@@ -67,6 +67,16 @@ function Home() {
 
 
 
+        <Paper elevation={6} className={classes.tag}>Full-Stack Developer</Paper>
+        <Paper elevation={6} className={classes.tag}>Javascript</Paper>
+        <Paper elevation={6} className={classes.tag}>HTML</Paper>
+        <Paper elevation={6} className={classes.tag}>CSS</Paper>
+        <Paper elevation={6} className={classes.tag}>Cooperative Development</Paper>
+        <Paper elevation={6} className={classes.tag}>Teamwork</Paper>
+        {/* </Paper> */}
+
+
+
         <Grid container className={classes.grid} spacing={1}>
         <Grid item xs={6}>
 
@@ -93,13 +103,6 @@ function Home() {
         
     
         {/* <Paper elevation={3}> */}
-        <Paper elevation={6} className={classes.tag}>Full-Stack Developer</Paper>
-        <Paper elevation={6} className={classes.tag}>Javascript</Paper>
-        <Paper elevation={6} className={classes.tag}>HTML</Paper>
-        <Paper elevation={6} className={classes.tag}>CSS</Paper>
-        <Paper elevation={6} className={classes.tag}>Cooperative Development</Paper>
-        <Paper elevation={6} className={classes.tag}>Teamwork</Paper>
-        {/* </Paper> */}
         </Grid>
 
         <ContactLinks className={classes.links}/>

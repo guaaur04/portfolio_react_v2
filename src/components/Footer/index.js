@@ -96,35 +96,7 @@ export default function StickyFooter() {
         </Container>
 
         <Container className={classes.content}>
-        
-        <Typography variant="h5">Stay Connected </Typography>
-
-        <ButtonGroup
-                    color="primary"
-                    aria-label="contained primary button group"
-                    variant="text"
-                    className = {classes.links}
-                    size = "large"
-                    // orientation="vertical"
-                > 
-
-                    <IconButton className={classes.icons} aria-label="Github" href="https://github.com/guaaur04">
-                        <FavoriteIcon />
-                    </IconButton>
-
-                    <IconButton className={classes.icons} aria-label="LinkedIn" href="https://www.linkedin.com/in/auricia-v-guardado-599883a0/">
-                        <LinkedInIcon />
-                    </IconButton>
-
-                    <IconButton className={classes.icons} aria-label="Twitter" href="https://twitter.com/V88118935">
-                        <TwitterIcon />
-                    </IconButton>
-
-
-          </ButtonGroup>
-
-        
-        
+    
         
         </Container>
       </footer>

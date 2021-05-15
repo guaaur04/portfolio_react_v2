@@ -13,9 +13,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Tooltip from '@material-ui/core/Tooltip';
 
 //Tabs
-import Paper from '@material-ui/core/Paper';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
+
 import HomeIcon from '@material-ui/icons/Home';
 
 //Language 
@@ -50,8 +48,9 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
 
-    backgroundImage: "url(" + "https://images.unsplash.com/photo-1581087659125-322b6be59e99?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" + ")",
-    
+    backgroundImage: "url(" + "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" + ")",
+    backgroundSize: 'auto',
+
     // Nav Color
     backgroundColor: "whitesmoke",
 
@@ -77,6 +76,11 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
    
   },
+
+  name: {
+    color: 'black',
+
+  }
 
 }));
 
@@ -128,6 +132,8 @@ export default function ProminentAppBar() {
         <Toolbar className={classes.toolbar}>
         <Container className ={classes.navbarDisplayFlex}>
 
+        <Typography variant="h3" className={classes.name}>V</Typography>
+        
      <div>
      <Tooltip title="Open Menu">
       <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
@@ -150,6 +156,7 @@ export default function ProminentAppBar() {
     </div>
 
     <div>
+
 
     {/* Tabs */}
     <div className={classes.tabs}>

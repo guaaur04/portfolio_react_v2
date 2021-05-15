@@ -54,7 +54,7 @@ function Contact() {
 
             {/* Contact Form  */}
 
-            <ContactForm />
+            {/* <ContactForm /> */}
 
             <div className={classes.form}>
 
