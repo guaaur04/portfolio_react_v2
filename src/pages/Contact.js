@@ -31,11 +31,18 @@ const useStyles = makeStyles((theme) => ({
     },
 
     form: {
-        position: 'relative',
+        // position: 'relative',
+        
         marginLeft: '10em',
+        margin: '2em',
+        flexDirection: 'row',   
+    }, 
+
+    resume: {
+        width: '30em',
         margin: 'auto',
-        flexDirection: 'column',   
-    }
+    },
+
 }));
 
 function Contact() {
@@ -87,7 +94,7 @@ function Contact() {
 
             </div>
 
-            <Paper elevation={3}>
+            <Paper elevation={3} className={classes.resume}>
                 <Typography variant="h4">Download Resume</Typography>
                 <PictureAsPdfIcon />
 
@@ -97,7 +104,6 @@ function Contact() {
 
             <ContactLinks />
 
-            <img src="https://media.giphy.com/media/py5qVYNFWCXpXKzcnk/giphy.gif" alt="glastrier" width="100" height="100"></img>
            
             </div>
 

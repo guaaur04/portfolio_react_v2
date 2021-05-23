@@ -31,14 +31,14 @@ const useStyles = makeStyles((theme) => ({
 
   tabs: {
     // backgroundColor: 'lightgray',
-    fontSize: '30px', 
+    fontSize: '30px',
     fontWeight: '30px',
     width: '20em',
     color: 'black',
     display: 'flex',
     position: 'relative',
     margin: 'auto',
-    
+
   },
 
   toolbar: {
@@ -60,26 +60,31 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: 'flex-end',
     color: 'black',
     display: 'flex',
-    
-  
+
+
   },
-  mobile:{
+  mobile: {
     // margin: 'auto',
     alignItems: 'flex-start',
   },
 
   navbarDisplayFlex: {
-    display: 'flex',
-    // gridTemplateColumns: '1fr 3fr',
-    // gridTemplateRows: '2fr 2fr',
-    justifyContent: `space-between`,
+    display: 'grid',
+    gridTemplateColumns: '5fr',
+    gridTemplateRows: '5fr',
     margin: 'auto',
-   
+
   },
 
   name: {
     color: 'black',
+    marginLeft: '27rem',
 
+
+  }, 
+
+  language: {
+    marginLeft: 1000,
   }
 
 }));
@@ -130,75 +135,75 @@ export default function ProminentAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar className={classes.toolbar}>
-        <Container className ={classes.navbarDisplayFlex}>
+          <Container className={classes.navbarDisplayFlex}>
 
-        <Typography variant="h3" className={classes.name}>V</Typography>
-        
-     <div>
-     <Tooltip title="Open Menu">
-      <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-      <MenuIcon></MenuIcon>
-      </Button>
-      </Tooltip>
+            <Typography variant="h3" className={classes.name}>Auricia V Guardado</Typography>
 
-      <Menu
-        id="simple-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={Boolean(anchorEl)}
-        onClose={handleClose}
-        className={classes.mobile}
-      >
-        <MenuItem onClick={handleClose}>About</MenuItem>
-        <MenuItem onClick={handleClose}>Projects</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
-      </Menu>
-    </div>
+            <div>
+              <Tooltip title="Open Menu">
+                <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+                  <MenuIcon></MenuIcon>
+                </Button>
+              </Tooltip>
 
-    <div>
+              <Menu
+                id="simple-menu"
+                anchorEl={anchorEl}
+                keepMounted
+                open={Boolean(anchorEl)}
+                onClose={handleClose}
+                className={classes.mobile}
+              >
+                <MenuItem onClick={handleClose}>About</MenuItem>
+                <MenuItem onClick={handleClose}>Projects</MenuItem>
+                <MenuItem onClick={handleClose}>Contact</MenuItem>
+              </Menu>
 
 
-    {/* Tabs */}
-    <div className={classes.tabs}>
-    
-        <Button icon={<HomeIcon />} href="/" className={classes.tabs}> About </Button>
+            </div>
 
-        <Button label="Projects" href="/projects" className={classes.tabs}> Projects </Button>
-
-        <Button label="Contact" href="/contact" className={classes.tabs}> Contact </Button>
-
-    </div>
-
-    </div>
-
-    <div>
-     {/* Language */}
-     <TextField
-          id="outlined-select-language-native"
-          select
-          label="Language"
-          value={language}
-          onChange={handleLanguageChange}
-          SelectProps={{
-            native: true,
-          }}
-          // helperText="Language"
-          variant="outlined"
-        >
-          {languages.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </TextField>
-      </div>
+            <div>
 
 
+              {/* Tabs */}
+              <div className={classes.tabs}>
 
-   
-      </Container> 
-    </Toolbar>
-  </AppBar>
+                <Button icon={<HomeIcon />} href="/" className={classes.tabs}> About </Button>
+
+                <Button label="Projects" href="/projects" className={classes.tabs}> Projects </Button>
+
+                <Button label="Contact" href="/contact" className={classes.tabs}> Contact </Button>
+
+              </div>
+
+              <div>
+                {/* Language */}
+                <TextField
+                  id="outlined-select-language-native"
+                  select
+                  label="Language"
+                  value={language}
+                  onChange={handleLanguageChange}
+                  SelectProps={{
+                    native: true,
+                  }}
+                  // helperText="Language"
+                  variant="outlined"
+                  className={classes.language}
+                >
+                  {languages.map((option) => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </TextField>
+              </div>
+
+
+            </div>
+          </Container>
+        </Toolbar>
+      </AppBar>
     </div>
   );
 }

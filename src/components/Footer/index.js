@@ -97,7 +97,8 @@ export default function StickyFooter() {
 
         <Container className={classes.content}>
     
-        
+        <img src="https://media.giphy.com/media/py5qVYNFWCXpXKzcnk/giphy.gif" alt="glastrier" width="100" height="100"></img>
+
         </Container>
       </footer>
     </div>

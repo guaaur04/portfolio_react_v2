@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
     tag: {
         display: 'flex',
         marginTop: 3,
-        backgroundColor: 'lightgreen',
+        backgroundColor: 'lightgray',
     },
 
     grid: {
@@ -66,34 +66,29 @@ function Home() {
         <div id="homeWrapper">
 
 
-
-        <Paper elevation={6} className={classes.tag}>Full-Stack Developer</Paper>
-        <Paper elevation={6} className={classes.tag}>Javascript</Paper>
-        <Paper elevation={6} className={classes.tag}>HTML</Paper>
-        <Paper elevation={6} className={classes.tag}>CSS</Paper>
-        <Paper elevation={6} className={classes.tag}>Cooperative Development</Paper>
-        <Paper elevation={6} className={classes.tag}>Teamwork</Paper>
         {/* </Paper> */}
-
-
-
-        <Grid container className={classes.grid} spacing={1}>
-        <Grid item xs={6}>
-
-        <Slider/>
-        
-        </Grid>
-        <Grid item xs={4} className={classes.aboutContainer}>
-        
-
-        <Typography variant="h1">About Me</Typography>
-
 
         <Button variant="contained" color="secondary" href="/projects" class="arrow">
         Projects
         </Button> 
 
+        <Grid container className={classes.grid} spacing={1}>
+        <Grid item xs={6}>
 
+        {/* <Slider/> */}
+        
+        </Grid>
+        <Grid item xs={4} className={classes.aboutContainer}>
+        
+
+
+        <Typography variant="h1">About Me</Typography>
+
+        <Paper elevation={6} className={classes.aboutText}>Full-Stack Web Development</Paper>
+    
+        <Paper elevation={6} className={classes.aboutText}>Cooperative and Economic Development</Paper>
+
+        <Paper elevation={6} className={classes.aboutText}> Another Highlight</Paper>
 
         <Paper elevation={3} className={classes.aboutText}>
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
