@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import ContactForm from "../components/ContactForm";
 import ContactLinks from "../components/ContactLinks";
 
 import Typography from '@material-ui/core/Typography';
@@ -30,12 +29,8 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '500px',
     },
 
-    form: {
-        // position: 'relative',
-        
-        marginLeft: '10em',
-        margin: '2em',
-        flexDirection: 'row',   
+    form: {   
+     margin: 'auto',   
     }, 
 
     resume: {
@@ -57,11 +52,6 @@ function Contact() {
 
             <div id="contactWrapper">
             <h1 className={classes.title}>Contact</h1>
-
-
-            {/* Contact Form  */}
-
-            {/* <ContactForm /> */}
 
             <div className={classes.form}>
 

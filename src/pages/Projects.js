@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
 
         gridContainer: {
         margin: 'auto',
-        marginLeft: '10em',
         display: 'flex-start',
         flexWrap: 'wrap',
     }
@@ -35,6 +34,7 @@ function Portfolio() {
             <div id="projectsWrapper">
                 <Grid container spacing={3} className={classes.gridContainer}>
                 <Grid container spacing={3}>
+                    
                 <h1 className={classes.title}>Projects</h1>
                 {projects.map(project => (
 

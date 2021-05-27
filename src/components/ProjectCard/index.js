@@ -15,9 +15,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 375,
-    minWidth: 250,
-    backgroundColor: '#26C485',
+    maxWidth: 500,
+    minWidth: 325,
     borderRadius: '10px',
     margin: '1.5rem',
     position: 'relative',

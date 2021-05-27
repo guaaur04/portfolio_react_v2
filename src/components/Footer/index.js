@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     position: 'relative',
     flexDirection: 'row',
-    minHeight: '100vh',
+    minHeight: '30vh',
     bottom: 0,
   },
 
@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.getContrastText("#59A5D8"),
     backgroundColor: "#59A5D8",
     '&:hover': {
-      backgroundColor: "#598392",
+      backgroundColor: "#CACFEF",
 
      
     },
@@ -86,7 +86,7 @@ export default function StickyFooter() {
 
       <footer className={classes.footer}>
         <Container maxWidth="sm" className={classes.content}>
-          <Typography variant="h3">V Guardado </Typography>
+          <Typography variant="h3">Auricia V Guardado </Typography>
           <Typography variant="h6">"A lost ship, steered by tired, seasick sailors, can still be guided to port." ― Assata Shakur</Typography>
 
           <Typography variant="body3">Powered by React and Material UI</Typography>

@@ -24,14 +24,17 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+
 export default function Slider() {
   const classes = useStyles();
 return (
 
-  <AwesomeSlider className ={classes.root}
+  
+  <AutoplaySlider className ={classes.root}
   play={true}
   cancelOnInteraction={false} // should stop playing on user interaction
-  interval={500}
+  interval={5000}
   >
     <div data-src="https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2018/02/thumb_720_450_Jungledreamstime_l_56902828.jpg">Full-Stack Developer </div>
 
@@ -43,6 +46,6 @@ return (
 
     <div data-src="../images/unsplash_star.jpg" />
 
-  </AwesomeSlider>
+  </AutoplaySlider>
 );
 }

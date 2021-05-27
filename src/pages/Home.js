@@ -66,8 +66,6 @@ function Home() {
         <div id="homeWrapper">
 
 
-        {/* </Paper> */}
-
         <Button variant="contained" color="secondary" href="/projects" class="arrow">
         Projects
         </Button> 
@@ -75,16 +73,15 @@ function Home() {
         <Grid container className={classes.grid} spacing={1}>
         <Grid item xs={6}>
 
-        {/* <Slider/> */}
+        <Slider/>
         
         </Grid>
         <Grid item xs={4} className={classes.aboutContainer}>
         
 
+        <Typography variant="h3">About Me</Typography>
 
-        <Typography variant="h1">About Me</Typography>
-
-        <Paper elevation={6} className={classes.aboutText}>Full-Stack Web Development</Paper>
+        <Paper elevation={6} className={classes.aboutText}>Full-Stack Web Developer</Paper>
     
         <Paper elevation={6} className={classes.aboutText}>Cooperative and Economic Development</Paper>
 
@@ -105,8 +102,23 @@ function Home() {
         
         </Grid>
 
-    
-        
+        <Typography variant="h3">Technologies</Typography>
+        <Paper elevation={3} className={classes.aboutText}>
+        HTML
+        </Paper>
+
+        <Paper elevation={3} className={classes.aboutText}>
+        CSS
+        </Paper>
+
+        <Paper elevation={3} className={classes.aboutText}>
+        Javascript
+        </Paper>
+
+        <Paper elevation={3} className={classes.aboutText}>
+        Python
+        </Paper>
+
 
     </div>
 
