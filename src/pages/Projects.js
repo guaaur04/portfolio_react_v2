@@ -9,7 +9,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     title: {
         display: 'flex',
-        marginLeft: '500px',
+        marginLeft: '700px',
         marginRight: '500px',
         marginTop: '20px',
         // marginBottom: '20px',

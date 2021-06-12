@@ -11,6 +11,7 @@ import FavoriteIcon from '@material-ui/icons/GitHub';
 import ShareIcon from '@material-ui/icons/Link';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { makeStyles } from '@material-ui/core/styles';
+import Tooltip from '@material-ui/core/Tooltip';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -19,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 325,
     borderRadius: '10px',
     margin: '1.5rem',
+    marginLeft: '10rem',
     position: 'relative',
     boxShadow: '0 3px 6px #999, 0 3px 5px #999',
     textAlign: 'left',
@@ -62,23 +64,34 @@ export default function ProjectCard(props) {
           <CardHeader
             title={props.name}
           />
+
           <CardMedia
             className={classes.media}
             image={props.image}
             title="Study Kanji"
           />
+
           <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
               {props.description}
             </Typography>
           </CardContent>
+
           <CardActions disableSpacing>
+
+          <Tooltip title ="Github">
             <IconButton aria-label="Github" href={props.github}>
               <FavoriteIcon />
             </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Live Site">
             <IconButton aria-label="Live Site" href={props.live}>
               <ShareIcon />
             </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Technologies">
             <IconButton
               className={(classes.expand, {
                 [classes.expandOpen]: expanded,
@@ -89,14 +102,20 @@ export default function ProjectCard(props) {
             >
               <ExpandMoreIcon />
             </IconButton>
+          </Tooltip>
+
           </CardActions>
+
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
+
               <Typography paragraph>
                 Next time you're here, there will be even more info.
-          </Typography>
+              </Typography>
+
             </CardContent>
           </Collapse>
+
         </Card>
 
 

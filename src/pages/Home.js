@@ -70,6 +70,14 @@ function Home() {
         Projects
         </Button> 
 
+        <Button variant="contained" color="secondary" href="/projects" class="arrow">
+        Technologies
+        </Button>
+
+        <Button variant="contained" color="secondary" href="/projects" class="arrow">
+        Interests
+        </Button>
+
         <Grid container className={classes.grid} spacing={1}>
         <Grid item xs={6}>
 
@@ -118,6 +126,8 @@ function Home() {
         <Paper elevation={3} className={classes.aboutText}>
         Python
         </Paper>
+
+        <Typography variant="h3">Interests</Typography>
 
 
     </div>
