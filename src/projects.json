@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "Point of Sale",
-        "image": "/images/kanji_study_app.png",
+        "image": "/images/autoflower.png",
         "description": "Designed for those looking to learn Japanese in a simple and user friendly way. Understanding the Kanji is a very basic stepping stone as an introduction to the language",
         "github": "https://github.com/desasser/Japanese-Study-App",
         "live": "https://desasser.github.io/Japanese-Study-App/"
