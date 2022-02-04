@@ -127,7 +127,28 @@ function Home() {
         Python
         </Paper>
 
+        <Paper elevation={3} className={classes.aboutText}>
+        Solidity
+        </Paper>
+
         <Typography variant="h3">Interests</Typography>
+        <Typography variant="h4">
+
+            Creating practical, user-friendly solutions to everyday problems, as well, as imagining and creating beyond those limits of imagination. 
+
+            <br></br>
+
+            Developing technology for cooperative economic networks. 
+
+            <br></br>
+
+            Developing and collaborating in blockchain technology. 
+            
+            <br></br>
+
+            Thinking of and developing technology that is responsive to quantum science and computing. 
+
+        </Typography>
 
 
     </div>

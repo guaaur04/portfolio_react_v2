@@ -1,9 +1,11 @@
+
 #projectsWrapper, #homeWrapper, #contactWrapper{
     margin: auto;
     /* flex-direction: row; */
     position: relative;
     height: 100%;
     clear: both;
+    background-color: whitesmoke; 
 } 
 
 .arrow {

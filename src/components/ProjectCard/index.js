@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '1.5rem',
     marginLeft: '10rem',
     position: 'relative',
-    boxShadow: '0 3px 6px #999, 0 3px 5px #999',
+    boxShadow: '8 1px 6px #999, 0 6px 6px #999',
     textAlign: 'left',
     justifyContent: 'center',
   
@@ -31,10 +31,13 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: "row",
     flexWrap: "wrap",
 
+    backgroundColor: 'lightGray'
+
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
+    objectFit: 'cover',
   },
 
   expand: {
@@ -47,6 +50,10 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
+
+  description: {
+    color: 'black',
+  }
   
 
 }));

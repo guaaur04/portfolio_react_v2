@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
   },
 
   tabs: {
-    // backgroundColor: 'lightgray',
     fontSize: '30px',
     fontWeight: '30px',
     width: '20em',
@@ -38,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     position: 'relative',
     margin: 'auto',
+   
 
   },
 
@@ -45,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
     minHeight: 10,
     height: 400,
     alignItems: 'center',
-    paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
 
     backgroundImage: "url(" + "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" + ")",
@@ -63,23 +62,10 @@ const useStyles = makeStyles((theme) => ({
 
 
   },
-  mobile: {
-    // margin: 'auto',
-    alignItems: 'flex-start',
-  },
-
-  navbarDisplayFlex: {
-    display: 'grid',
-    gridTemplateColumns: '5fr',
-    gridTemplateRows: '5fr',
-    margin: 'auto',
-
-  },
 
   name: {
     color: 'black',
     marginLeft: '27rem',
-
 
   }, 
 
@@ -137,9 +123,7 @@ export default function ProminentAppBar() {
         <Toolbar className={classes.toolbar}>
           <Container className={classes.navbarDisplayFlex}>
 
-            <Typography variant="h3" className={classes.name}>Auricia V Guardado</Typography>
-
-            <div>
+            
               <Tooltip title="Open Menu">
                 <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                   <MenuIcon></MenuIcon>
@@ -160,9 +144,6 @@ export default function ProminentAppBar() {
               </Menu>
 
 
-            </div>
-
-            <div>
 
 
               {/* Tabs */}
@@ -199,8 +180,6 @@ export default function ProminentAppBar() {
                 </TextField>
               </div>
 
-
-            </div>
           </Container>
         </Toolbar>
       </AppBar>

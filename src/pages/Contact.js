@@ -29,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: '500px',
     },
 
-    form: {   
-     margin: 'auto',   
-    }, 
+    form: {
+        margin: 'auto',
+    },
 
     resume: {
         width: '30em',
@@ -51,50 +51,50 @@ function Contact() {
             {/* Here I will render my column details */}
 
             <div id="contactWrapper">
-            <h1 className={classes.title}>Contact</h1>
+                <h1 className={classes.title}>Contact</h1>
 
-            <div className={classes.form}>
+                <div className={classes.form}>
 
-            <TextField
-                id="outlined-helperText"
-                label="Name"
-                defaultValue="Default Value"
-                variant="outlined"
-            />
+                    <TextField
+                        id="outlined-helperText"
+                        label="Name"
+                        defaultValue="Default Value"
+                        variant="outlined"
+                    />
 
-            <TextField
-                id="outlined-helperText"
-                label="E-mail"
-                defaultValue="Default Value"
-                variant="outlined"
-            />
+                    <TextField
+                        id="outlined-helperText"
+                        label="E-mail"
+                        defaultValue="Default Value"
+                        variant="outlined"
+                    />
 
-            <TextField
-                id="outlined-multiline-static"
-                label="Message:"
-                multiline
-                rows={4}
-                defaultValue="Default Value"
-                variant="outlined"
-            />
+                    <TextField
+                        id="outlined-multiline-static"
+                        label="Message:"
+                        multiline
+                        rows={4}
+                        defaultValue="Default Value"
+                        variant="outlined"
+                    />
 
-            <Button variant="contained" color="primary">
-            Send Message 
-            </Button>
+                    <Button variant="contained" color="primary">
+                        Send Message
+                    </Button>
 
-            </div>
+                </div>
 
-            <Paper elevation={3} className={classes.resume}>
-                <Typography variant="h4">Download Resume</Typography>
-                <PictureAsPdfIcon />
+                <Paper elevation={3} className={classes.resume}>
+                    <Typography variant="h4">Download Resume</Typography>
+                    <PictureAsPdfIcon />
 
-                {/* Link to download resume  */}
+                    {/* Link to download resume  */}
 
-            </Paper>
+                </Paper>
 
-            <ContactLinks />
+                <ContactLinks />
 
-           
+
             </div>
 
 
