@@ -18,26 +18,31 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 500,
     minWidth: 325,
-    borderRadius: '10px',
-    margin: '1.5rem',
-    marginLeft: '10rem',
-    position: 'relative',
-    boxShadow: '8 1px 6px #999, 0 6px 6px #999',
-    textAlign: 'left',
-    justifyContent: 'center',
-  
-    // height: 'calc(100% / 4)',
-    width: 'calc(100% / 3)',
-    flexFlow: "row",
-    flexWrap: "wrap",
+    marginLeft: 100,
+    marginBottom: 50, 
+    display: 'inline-grid',
+    borderRadius: '20px',
+    marginTop: '1 em',
+    boxShadow: '6 6px 6px #999, 6 6px 6px #999',
+   
 
-    backgroundColor: 'lightGray'
+
+    
+    // textAlign: 'left',
+    // height: 'calc(100% / 6)',
+    // width: 'calc(100% / 3)',
+    // flexFlow: "column",
+    // flexWrap: "wrap",
+
+
+    
+  
 
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
-    objectFit: 'cover',
+    objectFit: 'fill',
   },
 
   expand: {
@@ -98,30 +103,8 @@ export default function ProjectCard(props) {
             </IconButton>
           </Tooltip>
 
-          <Tooltip title="Technologies">
-            <IconButton
-              className={(classes.expand, {
-                [classes.expandOpen]: expanded,
-              })}
-              onClick={handleExpandClick}
-              aria-expanded={expanded}
-              aria-label="show more"
-            >
-              <ExpandMoreIcon />
-            </IconButton>
-          </Tooltip>
-
           </CardActions>
 
-          <Collapse in={expanded} timeout="auto" unmountOnExit>
-            <CardContent>
-
-              <Typography paragraph>
-                Next time you're here, there will be even more info.
-              </Typography>
-
-            </CardContent>
-          </Collapse>
 
         </Card>
 

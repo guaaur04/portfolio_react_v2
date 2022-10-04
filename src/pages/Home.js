@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Slider from "../components/Slider";
 import ContactLinks from "../components/ContactLinks";
+import Divider from '@material-ui/core/Divider';
 // import ProjectCard from "../components/ProjectCard";
 // import projects from "../projects.json";
 
@@ -16,6 +17,7 @@ import Grid from '@material-ui/core/Grid';
 import "./style.css";
 
 import InfiniteScroll from "react-infinite-scroll-component";
+import { Box, Card } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
     aboutText: { 
@@ -34,24 +36,48 @@ const useStyles = makeStyles((theme) => ({
 
     grid: {
         flexGrow: 1,
-        display: 'flex',
+        display: 'inline-grid',
         marginTop: '1.5em',
+        // float: 'right',
         flexFlow: "row",
-        // flexWrap: "wrap",
+        flexWrap: "wrap",
         margin: "auto",
         position: "relative",
     
     },
 
+    title: {
+      textAlign: 'center',  
+      marginTop: 20,
+      marginBottom: 20,
+    //   fontSize: 50, 
+      font:'helvetica',
+      
+    },
+
     aboutContainer: {
-        display: 'center',
+        backgroundColor: 'red',
+        position: 'relative',
         justifyContent: 'space-around',
+        margin: 10,
+        marginLeft: 100,
+        width: 500,
+        height: 'calc(100% / 4)',
+        width: 'calc(100% / 2)',
+        displpay: 'grid',
+        maxWidth: 650,
+        minWidth: 300,
         
+            
     }, 
 
     links: {
+        clear: 'both',
+        width: 50,
+        justifyContent: 'flex-end',
         // margin: 'auto',
-        marginLeft: '5em',
+       
+        
     }
     
 }));
@@ -63,92 +89,36 @@ function Home() {
 
         <Nav />
 
-        <div id="homeWrapper">
-
-
-        <Button variant="contained" color="secondary" href="/projects" class="arrow">
-        Projects
-        </Button> 
-
-        <Button variant="contained" color="secondary" href="/projects" class="arrow">
-        Technologies
-        </Button>
-
-        <Button variant="contained" color="secondary" href="/projects" class="arrow">
-        Interests
-        </Button>
-
-        <Grid container className={classes.grid} spacing={1}>
-        <Grid item xs={6}>
-
-        <Slider/>
-        
-        </Grid>
-        <Grid item xs={4} className={classes.aboutContainer}>
-        
-
-        <Typography variant="h3">About Me</Typography>
-
-        <Paper elevation={6} className={classes.aboutText}>Full-Stack Web Developer</Paper>
-    
-        <Paper elevation={6} className={classes.aboutText}>Cooperative and Economic Development</Paper>
-
-        <Paper elevation={6} className={classes.aboutText}> Another Highlight</Paper>
-
-        <Paper elevation={3} className={classes.aboutText}>
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </Paper>
-
-        <Paper elevation={3} className={classes.aboutText}> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Paper>
-        
-    
-        {/* <Paper elevation={3}> */}
-        </Grid>
-
         <ContactLinks className={classes.links}/>
 
-        
-        </Grid>
+        <div id="homeWrapper">
 
-        <Typography variant="h3">Technologies</Typography>
-        <Paper elevation={3} className={classes.aboutText}>
-        HTML
-        </Paper>
+        <Typography className={classes.title} variant="h3"> Auricia V Guardado </Typography>
 
-        <Paper elevation={3} className={classes.aboutText}>
-        CSS
-        </Paper>
+        {/* <ContactLinks className={classes.links}/> */}
 
-        <Paper elevation={3} className={classes.aboutText}>
-        Javascript
-        </Paper>
-
-        <Paper elevation={3} className={classes.aboutText}>
-        Python
-        </Paper>
-
-        <Paper elevation={3} className={classes.aboutText}>
-        Solidity
-        </Paper>
-
-        <Typography variant="h3">Interests</Typography>
-        <Typography variant="h4">
-
-            Creating practical, user-friendly solutions to everyday problems, as well, as imagining and creating beyond those limits of imagination. 
-
-            <br></br>
-
-            Developing technology for cooperative economic networks. 
-
-            <br></br>
-
-            Developing and collaborating in blockchain technology. 
+        <Box className={classes.aboutContainer} > 
             
-            <br></br>
+            <img className={classes.grid} src="../images/portrait.jpg" width="388" height="500"></img>
 
-            Thinking of and developing technology that is responsive to quantum science and computing. 
+            <Typography variant="h5"> 
+             I'm a Web3 Full-Stack Engineer with previous experience in worker-cooperatives and the service industry. My mission to create tools that support and empower people, communities, and small businesses in a changing world by creating sustainably run technology using versatility, ingenuity, collaboration, and multi-faceted, complex solutions. 
+            </Typography>
 
-        </Typography>
+            <Divider></Divider>
+
+            <Typography variant="h5"> 
+             Javascript, React, Solidity
+            </Typography>
+
+            
+        </Box> 
+
+        <Box>
+            <Typography>Placeholder</Typography>
+        </Box>
+        
+
 
 
     </div>

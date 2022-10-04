@@ -16,12 +16,13 @@ import { red } from '@material-ui/core/colors';
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        fontSize: '45px',
+        fontSize: '48px',
     },
 
     center: {
         position: 'fixed',
-        marginLeft: '13.5em',
+        marginLeft: '1740',    
+
     },
 
     icons:{

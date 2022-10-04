@@ -1,12 +1,9 @@
 
 #projectsWrapper, #homeWrapper, #contactWrapper{
-    margin: auto;
-    /* flex-direction: row; */
-    position: relative;
     height: 100%;
-    clear: both;
-    background-color: whitesmoke; 
-} 
+    /* background-color: rgb(139, 190, 226);  */
+    
+}   
 
 .arrow {
     cursor: pointer;

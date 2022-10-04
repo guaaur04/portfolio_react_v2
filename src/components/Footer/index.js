@@ -36,21 +36,21 @@ const useStyles = makeStyles((theme) => ({
   },
 
   footer: {
-    position: 'static',
+    // position: 'static',
     width: '100%',
     padding: theme.spacing(2, 2),
     marginTop: '0 auto',
-    paddingBottom: '2.5 rem',
+    // paddingBottom: '2.5 rem',
     minHeight: '50vh',
     color: theme.palette.getContrastText("#59A5D8"),
     backgroundColor: "#59A5D8",
     '&:hover': {
-      backgroundColor: "#CACFEF",
+      backgroundColor: "#59A5D8",
 
      
     },
 
-    display: 'flex',
+    display: 'fixed',
 
   },
 

@@ -2,7 +2,6 @@ import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
 // Menu
@@ -23,54 +22,59 @@ const useStyles = makeStyles((theme) => ({
   //Tabs
   root: {
     flexGrow: 1,
-    // position: 'center',
-    // marginTop: 'auto',
-    // margin: 'auto',
+    
 
   },
 
   tabs: {
-    fontSize: '30px',
-    fontWeight: '30px',
+    // Tabs Title
+    fontSize: '25px',
+    fontWeight: '50px',
     width: '20em',
     color: 'black',
     display: 'flex',
-    position: 'relative',
     margin: 'auto',
    
 
   },
 
   toolbar: {
-    minHeight: 10,
-    height: 400,
+    // minHeight: 5,
+    // height: 100,
     alignItems: 'center',
-    paddingBottom: theme.spacing(2),
+  
+    // paddingBottom: theme.spacing(1),
 
-    backgroundImage: "url(" + "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" + ")",
+    // backgroundImage: "url(" + "https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" + ")",
     backgroundSize: 'auto',
 
     // Nav Color
-    backgroundColor: "whitesmoke",
+    backgroundColor: "white",
+    color: 'white',
 
   },
   title: {
-    flexGrow: 1,
-    alignSelf: 'flex-end',
+    // alignSelf: 'flex-end',
     color: 'black',
-    display: 'flex',
-
-
+    
+    
   },
 
   name: {
-    color: 'black',
+    color: 'white',
     marginLeft: '27rem',
 
   }, 
 
+  mobile: {
+    margin: 'auto',
+    color: 'white',
+    align: 'left',
+  },
+
   language: {
-    marginLeft: 1000,
+    // margin: 'auto',
+    height: '100', 
   }
 
 }));
@@ -123,12 +127,12 @@ export default function ProminentAppBar() {
         <Toolbar className={classes.toolbar}>
           <Container className={classes.navbarDisplayFlex}>
 
-            
+{/*             
               <Tooltip title="Open Menu">
                 <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                   <MenuIcon></MenuIcon>
                 </Button>
-              </Tooltip>
+              </Tooltip> */}
 
               <Menu
                 id="simple-menu"
@@ -138,18 +142,19 @@ export default function ProminentAppBar() {
                 onClose={handleClose}
                 className={classes.mobile}
               >
-                <MenuItem onClick={handleClose}>About</MenuItem>
+                <MenuItem onClick={handleClose}>Home</MenuItem>
                 <MenuItem onClick={handleClose}>Projects</MenuItem>
                 <MenuItem onClick={handleClose}>Contact</MenuItem>
               </Menu>
 
 
-
+              {/* <h1 className={classes.title}> Auricia V Guardado </h1> */}
 
               {/* Tabs */}
               <div className={classes.tabs}>
+                
 
-                <Button icon={<HomeIcon />} href="/" className={classes.tabs}> About </Button>
+                <Button icon={<HomeIcon />} href="/" className={classes.tabs}> Home </Button>
 
                 <Button label="Projects" href="/projects" className={classes.tabs}> Projects </Button>
 
@@ -157,9 +162,10 @@ export default function ProminentAppBar() {
 
               </div>
 
+
               <div>
                 {/* Language */}
-                <TextField
+                {/* <TextField
                   id="outlined-select-language-native"
                   select
                   label="Language"
@@ -177,7 +183,7 @@ export default function ProminentAppBar() {
                       {option.label}
                     </option>
                   ))}
-                </TextField>
+                </TextField> */}
               </div>
 
           </Container>

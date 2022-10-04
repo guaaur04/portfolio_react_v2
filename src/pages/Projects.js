@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Nav from "../components/Nav";
 import ProjectCard from "../components/ProjectCard";
 import ContactLinks from "../components/ContactLinks";
+import { Typography } from "@material-ui/core";
 import Footer from "../components/Footer";
 import Button from '@material-ui/core/Button';
 import projects from "../projects.json";
@@ -10,12 +11,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        display: 'flex',
-        marginLeft: '650px',
-        marginRight: '500px',
-        marginTop: '60px',
-        // marginBottom: '20px',
-        fontSize: '60px',
+        textAlign: 'center',  
+    
     },
 
     gridContainer: {
@@ -46,15 +43,9 @@ function Portfolio() {
 
             <div id="projectsWrapper">
 
-                <Button className={classes.buttonMap} variant="contained">Active Projects</Button>
-                <Button className={classes.buttonMap} variant="contained">Projects</Button>
 
-                <ContactLinks className={classes.links} />
+            <Typography className={classes.title} variant="h3"> Auricia V Guardado </Typography>
 
-                <Grid container spacing={3} className={classes.gridContainer}>
-                    <Grid container spacing={3}>
-
-                        <h1 className={classes.title}>Projects</h1>
                         {projects.map(project => (
 
                             <ProjectCard
@@ -68,8 +59,8 @@ function Portfolio() {
                             />
 
                         ))}
-                    </Grid>
-                </Grid>
+
+                  
             </div>
 
             <div> <Footer /> </div>

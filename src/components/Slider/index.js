@@ -16,13 +16,12 @@ const useStyles = makeStyles((theme) => ({
     margin: 'auto',
     marginBottom: '5em',
     // marginLeft: '5em',
-    maxWidth: 700,
-    minWidth: 500,
+    maxWidth: 600,
+    minWidth: 400,
     height: 400,
   }
 
 }));
-
 
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 

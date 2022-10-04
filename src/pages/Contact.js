@@ -48,54 +48,7 @@ function Contact() {
 
             <Nav />
 
-            {/* Here I will render my column details */}
-
-            <div id="contactWrapper">
-                <h1 className={classes.title}>Contact</h1>
-
-                <div className={classes.form}>
-
-                    <TextField
-                        id="outlined-helperText"
-                        label="Name"
-                        defaultValue="Default Value"
-                        variant="outlined"
-                    />
-
-                    <TextField
-                        id="outlined-helperText"
-                        label="E-mail"
-                        defaultValue="Default Value"
-                        variant="outlined"
-                    />
-
-                    <TextField
-                        id="outlined-multiline-static"
-                        label="Message:"
-                        multiline
-                        rows={4}
-                        defaultValue="Default Value"
-                        variant="outlined"
-                    />
-
-                    <Button variant="contained" color="primary">
-                        Send Message
-                    </Button>
-
-                </div>
-
-                <Paper elevation={3} className={classes.resume}>
-                    <Typography variant="h4">Download Resume</Typography>
-                    <PictureAsPdfIcon />
-
-                    {/* Link to download resume  */}
-
-                </Paper>
-
-                <ContactLinks />
-
-
-            </div>
+    
 
 
             <div> <Footer /> </div>
